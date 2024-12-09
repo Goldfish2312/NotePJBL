@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'siru';
+    src: url('font/Sirukota.woff2') format('woff2'),
+         url('font/Sirukota.woff') format('woff'),
+         url('font/Sirukota.ttf') format('truetype');
+}
+
+.tks {
+    font-family: 'siru';
+    color: #412722;
+}
+
+body {
+    background: url('image/magicpattern-starry-night-1732538923509.png') no-repeat center center fixed;
+    background-size: cover; /* Mengatur ukuran gambar untuk menutupi seluruh layar */   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container untuk menulis catatan */
+.container {
+    width: 60%;
+    text-align: center;
+    background-color: #dfa06e; /* Warna kuning muda (dfa06e) */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Menambahkan box-shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Styling textarea untuk menulis catatan */
+textarea {
+    width: 80%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none; /* Mencegah pengguna untuk mengubah ukuran textarea */
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button.save-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+button.save-btn:hover {
+    background-color: #45a049;
+}
+
+/* Card Styling */
+.card {
+    width: 250px; /* Set the card width */
+    height: 300px; /* Set a fixed height for the card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the card body (make this scrollable) */
+.card-body {
+    flex: 1; /* Allow it to take up remaining space */
+    overflow-y: auto; /* Make the content scrollable if it overflows vertically */
+    padding-right: 10px; /* Prevents scrollbar from covering content */
+}
+
+/* Optional: Styling for the card body content */
+.card-body p {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Ensure cards are properly arranged */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between cards */
+    justify-content: space-between;
+}
+
+/* Button styling inside the card */
+.actions a {
+    margin-right: 10px;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for Edit and Delete buttons */
+.actions {
+    margin-top: 10px;
+}
+
+.edit-btn, .delete-btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #599B65; /* Warna hijau untuk Edit */
+}
+
+.delete-btn {
+    background-color: #DF2935; /* Warna merah untuk Hapus */
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn:hover {
+    background-color: #e32f2f;
+}
+
+.note-content {
+    transition: all 0.3s ease;
+}
